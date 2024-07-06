@@ -1,0 +1,68 @@
+/* Loading Fonts */
+@font-face {
+    font-family: "boska";
+    src: url("../fonts/Boska-Variable.ttf") format("truetype");
+}
+@font-face {
+    font-family: "boska";
+    src: url("../fonts/Boska-VariableItalic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "switzer";
+    src: url("../fonts/Switzer-Variable.ttf") format("truetype");
+}
+@font-face {
+    font-family: "switzer";
+    src: url("../fonts/Switzer-VariableItalic.ttf") format("truetype");
+    font-style: italic;
+}
+
+/* ==================
+    Global variables
+=====================*/
+:root {
+    --white-clr: #fff;
+    --black-clr: #000;
+    --primary-clr: #1b3936;
+    --secondary-clr: #75ff69;
+    --accent-clr: #678784;
+}
+
+/* ==================
+    Common Styles
+=====================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: switzer, sans-serif;
+    font-weight: 400;
+}
+
+.sec-container {
+    width: 100%;
+    max-width: 1200px;
+}
+.boska-text {
+    font-family: boska, sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+}
+.switzer-text {
+    font-family: switzer, sans-serif;
+    font-weight: 400;
+}
+.flex-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

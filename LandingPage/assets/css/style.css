@@ -1,0 +1,102 @@
+/* ========================
+    01. Navbar Start
+===========================*/
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar .navbar-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-center .nav-brand {
+    display: inline-block;
+}
+.nav-center .nav-brand > img {
+    object-fit: cover;
+}
+.navbar-container .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-container .nav-menu .nav-link {
+    color: var(--white-clr);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: switzer;
+    text-transform: capitalize;
+}
+
+.navbar-container .nav-left .nav-menu .nav-link:first-child {
+    margin-right: 50px;
+}
+.navbar-container .nav-right .nav-menu .nav-link:last-child {
+    margin-left: 50px;
+}
+
+/* ========================
+    02. Hero Start
+===========================*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../media/heroBG.png") no-repeat center center, #1b3936;
+    background-size: contain;
+}
+
+.hero .hero-container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container .hero-title {
+    font-family: boska, sans-serif;
+    font-size: 170px;
+    font-weight: 400;
+    color: var(--white-clr);
+    text-align: center;
+}
+
+.hero-title.first {
+    margin-top: 20px;
+    margin-right: 100px;
+    line-height: 165px;
+}
+.hero-title.second {
+    margin-left: 180px;
+    color: var(--secondary-clr);
+    font-weight: normal;
+    font-style: italic;
+    line-height: 130px;
+}
+.hero-title.third {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    line-height: 80px;
+}
+.hero-title.fourth {
+    text-align: center;
+    line-height: 10px;
+}
+
+.hero-container .hero-content > .des {
+    width: 100%;
+    max-width: 570px;
+    font-size: 16px;
+    font-family: switzer, sans-serif;
+    font-weight: 300;
+    color: var(--white-clr);
+    text-align: center;
+    margin-top: 90px;
+}
