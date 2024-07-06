@@ -100,3 +100,90 @@
     text-align: center;
     margin-top: 90px;
 }
+
+/* ========================
+    03. Information Start
+===========================*/
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+.info-wrapper .info-container {
+    padding: 40px 16px;
+    display: grid;
+    grid-template-columns: minmax(auto, 500px) minmax(auto, 400px);
+    justify-content: space-between;
+}
+.info-container .info-left > img {
+    width: 200px;
+    margin-bottom: 40px;
+}
+.info-container .info-left > .des {
+    width: 100%;
+    max-width: 600px;
+    color: var(--primary-clr);
+    font-size: 20px;
+    text-align: justify;
+}
+
+.info-container .info-right .info-card {
+    margin-bottom: 60px;
+}
+.info-container .info-right .info-card:last-child {
+    margin-bottom: 0px;
+}
+
+.info-container .info-right .info-card > .title {
+    font-size: 24px;
+    color: var(--primary-clr);
+}
+.info-container .info-right .info-card > .value {
+    font-size: 24px;
+    line-height: 80px;
+}
+.info-container .info-right .info-card > .value > .fancy {
+    font-size: 100px;
+    font-weight: bold;
+    color: var(--primary-clr);
+    margin-right: 10px;
+}
+
+/* ========================
+    04. Placeholder Start
+===========================*/
+.place-holder {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../media/placeholder.png");
+    background-attachment: fixed;
+}
+
+/* ========================
+    05. About us Start
+===========================*/
+.about-wrapper {
+    min-height: 100vh;
+    background: url("../media/AboutBG.png");
+    background-size: cover;
+}
+.about-wrapper .about-container {
+    width: 100%;
+    max-width: 1084px;
+    padding: 150px 20px;
+}
+.about-container > .sec-title {
+    font-size: 24px;
+    color: var(--secondary-clr);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.about-container > .content {
+    color: var(--accent-clr);
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.about-container > .content > .fancy {
+    color: var(--white-clr);
+}
