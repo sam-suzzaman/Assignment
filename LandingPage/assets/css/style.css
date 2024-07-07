@@ -504,3 +504,97 @@
     width: 100%;
     object-fit: cover;
 }
+
+/* ========================
+    11. Quick Links Start
+===========================*/
+.share-wrapper {
+}
+.share-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.share-card {
+    width: 100%;
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    padding: 100px 120px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.share-card > .subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.share-card > .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.share-card > .row > .title {
+    margin-right: 20px;
+}
+.share-card > .row > img {
+    width: 60px;
+    height: 60px;
+}
+
+.share-card .share-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-clr);
+    z-index: 1;
+    color: var(--primary-clr);
+    padding: 100px 127px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+.share-card .share-overlay > .title {
+    margin-right: 5px;
+}
+.share-card .share-overlay > .subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.share-card .share-overlay > img {
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+}
+
+.share-card:hover .share-overlay {
+    opacity: 1;
+}
+/* ========================
+    12. Footer Start
+===========================*/
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-container {
+    width: 100%;
+    max-width: 978px;
+}
+.footer-container .footer-menu {
+    list-style-type: none;
+    gap: 50px;
+}
+.footer-container .footer-menu a.footer-link {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--primary-clr);
+}
