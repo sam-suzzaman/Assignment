@@ -1,0 +1,63 @@
+/* Loading Fonts */
+@font-face {
+    font-family: "avenir";
+    src: url("../fonts/AvenirNextLTPro-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "avenir";
+    src: url("../fonts/AvenirNextLTPro-Bold.ttf") format("truetype");
+    font-style: bold;
+}
+
+/* ======================
+    Neutrialized Code
+=========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =======================
+    Variable Setup
+==========================*/
+:root {
+    --font-poppins: "Poppins", sans-serif;
+    --primary-clr: #273240;
+    --secondary-clr: #262a41;
+    --accent-clr: #101010;
+    --neutral-clr: #404852;
+    --bg-clr: #1e1e1e;
+    --white-clr: #fff;
+    --black-clr: #000;
+}
+
+/* ===================
+    Common Styles
+=======================*/
+body {
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    background-color: var(--bg-clr);
+    color: var(--white-clr);
+    transition: all 0.3s linear;
+}
+.main-wrapper {
+    display: grid;
+    grid-template-columns: minmax(auto, 340px) 1fr;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-wrapper .sidebar-wrapper {
+    width: 100%;
+    padding: 65px 80px 0;
+}
+
+.main-wrapper .content-sec-wrapper {
+    background-color: var(--white-clr);
+    color: var(--black-clr);
+    border-radius: 30px;
+}
