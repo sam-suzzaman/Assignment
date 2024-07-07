@@ -1,0 +1,301 @@
+/* ======================
+00. Indexing
+-------------------------
+1. Sidebar 
+2. Main Content
+    2.1 Left Content
+    2.2 Right Content
+
+========================*/
+
+/* ==================
+1. Sidebar start
+=====================*/
+
+/* Avatar */
+.avatar-row .avatar-card {
+    width: 72px;
+    height: 72px;
+    position: relative;
+}
+.avatar-row .avatar-card > img {
+    width: 100%;
+    object-fit: cover;
+}
+.avatar-row .avatar-card .notify {
+    background-color: #dc3434;
+    color: var(--white-clr);
+    width: 29px;
+    height: 29px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
+.avatar-row .avatar-info .username {
+    color: var(--white-clr);
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.avatar-row .avatar-info .user-email {
+    color: var(--white-clr);
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 60%;
+}
+
+/* Sidebar Menu */
+.navbar-row .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 80px;
+}
+.navbar-row .sidebar-menu .menu-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white-clr);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+
+.navbar-row .sidebar-menu .menu-link:hover {
+    opacity: 100%;
+}
+
+/* =========================
+2.0 Main Content  Part start
+===========================*/
+.content-sec-wrapper .content-container {
+    display: grid;
+    grid-template-columns: 510px 350px;
+    justify-content: space-between;
+    height: 100%;
+}
+.content-container .content-left-col {
+    padding: 40px 0 40px 100px;
+    height: 100%;
+}
+.content-container .content-right-col {
+    background-color: #f9fafc;
+    border-radius: 0 30px 30px 0;
+    padding: 50px 50px 45px 50px;
+    /* padding: 70px 50px 60px 50px; */
+    height: 100%;
+}
+
+/* =========================
+2.1 Content  Left Part start
+===========================*/
+
+/* top row  */
+.content-left-col .top-row {
+    display: grid;
+    grid-template-columns: 1fr 122px;
+    justify-content: space-between;
+}
+.content-left-col .top-row .left-col > .title {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: var(--secondary-clr);
+    line-height: 50px;
+    margin-bottom: 5px;
+}
+.content-left-col .top-row .left-col > .date {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 50%;
+    color: var(--accent-clr);
+}
+
+/* chart row */
+.content-left-col .chart-row > img {
+    width: 100%;
+    margin: 40px 0;
+}
+
+/* today row */
+.content-left-col .today-row > .card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content-left-col .today-row > .card:last-child {
+    margin-bottom: 0;
+}
+.content-left-col .today-row > .card .left {
+    width: 48px;
+    height: 48px;
+    margin-right: 17px;
+}
+.content-left-col .today-row > .today-title {
+    font-family: avenir;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-clr);
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.content-left-col .today-row > .card .left > img {
+    width: 100%;
+    object-fit: cover;
+}
+.content-left-col .today-row > .card .right {
+    width: 100%;
+}
+.content-left-col .today-row > .card .right .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-clr);
+    margin-bottom: 2px;
+}
+.content-left-col .today-row > .card .right .top > .value {
+    font-weight: 600;
+}
+.content-left-col .today-row > .card .right > .info {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 50%;
+    color: var(--neutral-clr);
+}
+
+/* Specific date row */
+.specific-date-row {
+    margin-top: 45px;
+}
+
+/* =========================
+2.2 Content Right Part start
+===========================*/
+.content-right-col .expense-row .expense-title {
+    font-family: avenir;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-clr);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.content-right-col .expense-card {
+    margin-bottom: 20px;
+}
+.content-right-col .expense-card:last-child {
+    margin-bottom: 0px;
+}
+.content-right-col .expense-card > .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.content-right-col .expense-card > .top-row > h6 {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--primary-clr);
+}
+.content-right-col .expense-card > .top-row > h6.value {
+    font-weight: 400;
+}
+.content-right-col .expense-card .progress {
+    width: 100%;
+    height: 5px;
+    background-color: #eceff5;
+    border-radius: 5px;
+    position: relative;
+}
+.content-right-col .expense-card .progress {
+    width: 100%;
+    height: 5px;
+    background-color: #eceff5;
+    border-radius: 5px;
+    position: relative;
+}
+.content-right-col .expense-card .progress:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #31ba96;
+    border-radius: 5px;
+    z-index: 1;
+}
+.content-right-col .expense-card .progress.per-45:after {
+    width: 45%;
+}
+.content-right-col .expense-card .progress.per-40:after {
+    width: 40%;
+}
+.content-right-col .expense-card .progress.per-35:after {
+    width: 35%;
+}
+
+/* saveing card */
+.saving-card {
+    margin-top: 90px;
+    position: relative;
+    background-color: #edf0f6;
+    padding: 16px;
+}
+
+.saving-card .img-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -50px;
+}
+
+.saving-card .box {
+    width: 84px;
+    height: 72px;
+    object-fit: cover;
+}
+.saving-card .floating {
+    width: 50px;
+    height: 90px;
+}
+.saving-card > .title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-clr);
+}
+.saving-card > .des {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 70%;
+    color: var(--neutral-clr);
+}
+.saving-card > .btn {
+    width: 100%;
+    padding: 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--white-clr);
+    background-color: var(--accent-clr);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
